@@ -3,6 +3,12 @@
     padding: 0;
 }
 
+html {
+  font-family: 'Meera Inimai', sans-serif;
+}
+
+/* Navigation Menu */
+
 .nav-bar {
     position: fixed;
     top: 0;
@@ -22,7 +28,6 @@ ul {
 }
 
 li a {
-    font-family: 'Meera Inimai', sans-serif;
     font-size: 0.8rem;
     color: #cac8c8;
     text-decoration: none;
@@ -34,6 +39,12 @@ li a:hover {
     text-decoration: none;
 }
 
+.menu {
+  display: none;
+}
+
+/* Container 1 */
+
 .container-1 {
     text-align: center;
     box-sizing: border-box;
@@ -41,14 +52,12 @@ li a:hover {
 }
 
 .header {
-    font-family: 'Meera Inimai', sans-serif;
-    font-size: 58px;
+    font-size: 4rem;
     color: #2B2B2B;
 }
 
 .sub-header {
-    font-family: 'Meera Inimai', sans-serif;
-    font-size: 30px;
+    font-size: 2rem;
     font-weight: 400;
     color: #2B2B2B;
 }
@@ -60,8 +69,7 @@ li a:hover {
 }
 
 .button {
-    font-family: 'Meera Inimai', sans-serif;
-    font-size: 22px;
+    font-size: 1.5rem;
     padding: 10px 15px;
     font-weight: 500;
     border: none;
@@ -77,14 +85,16 @@ a:hover {
     text-decoration: underline;
 }
 
+/* Container 2 */
+
 .container-2 {
     text-align: center;
     margin-top: 50px;
+    box-sizing: border-box;
 }
 
 span {
-    font-family: 'Meera Inimai', sans-serif;
-    font-size: 22px;
+    font-size: 1.5rem;
     font-weight: 600;
     color: #2B2B2B;
 }
@@ -95,24 +105,54 @@ span {
     margin: 10px;
 }
 
+/* Container 3 */
+
 .container-3 {
     text-align: center;
     margin-top: 50px;
 }
 
 .header-watch {
-    font-family: 'Meera Inimai', sans-serif;
-    font-size: 38px;
+    font-size: 2.5rem;
     font-weight: 900;
     letter-spacing: 0.1em;
     padding-bottom: 10px;
 }
 
 .sub-header-series-7 {
-    font-family: 'Meera Inimai', sans-serif;
     padding-bottom: 10px;
     color: #ED1515;
-    font-size: 22px;
+    font-size: 1.5rem;
     letter-spacing: 0.2em;
     font-weight: 800;
+}
+
+
+
+@media only screen and (max-width: 925px) {
+  .nav-bar {
+    overflow: hidden;
+    background-color: #2B2B2B;
+    opacity: 0.95;
+  }
+
+  .hidden {
+    display: none;
+  }
+
+  li a {
+    display: block;
+    font-size: 0.8rem;
+    color: #cac8c8;
+    text-decoration: none;
+    padding: 1.5em;
+  }
+
+  .menu {
+    background-color: #2B2B2B;
+    display: block;
+    position: absolute;
+    right: 45%;
+    top: 0;
+  }
 }
