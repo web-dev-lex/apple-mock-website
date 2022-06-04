@@ -7,6 +7,10 @@ html {
   font-family: 'Meera Inimai', sans-serif;
 }
 
+img {
+  max-width: 75%;
+}
+
 /* Navigation Menu */
 
 .nav-bar {
@@ -43,7 +47,7 @@ li a:hover {
   display: none;
 }
 
-/* Container 1 */
+/* Container 1 -- iPhone 13 Section */
 
 .container-1 {
     text-align: center;
@@ -85,7 +89,7 @@ a:hover {
     text-decoration: underline;
 }
 
-/* Container 2 */
+/* Container 2 -- iPhone SE Section */
 
 .container-2 {
     text-align: center;
@@ -105,7 +109,7 @@ span {
     margin: 10px;
 }
 
-/* Container 3 */
+/* Container 3 -- Series 7 Watch Section */
 
 .container-3 {
     text-align: center;
@@ -127,8 +131,14 @@ span {
     font-weight: 800;
 }
 
+.button-container-3 {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
 
-/* Navigation Bar */
+
+/* Navigation Bar On Smaller Devices */
 
 @media only screen and (max-width: 925px) {
   .nav-bar {
